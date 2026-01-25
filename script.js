@@ -12,7 +12,7 @@ const photos = ["photo/back.jpg", "photo/maddy_thumb.jpg", "photo/lmm.jpg", "pho
 // Playlist (replace with your 5 songs)
 const playlist = [
   "song/06 - HAPPY BIRTHDAY TO YOU.mp3",
-  "song/NAYEON_SUNSET_Lyrics_나연_노을만_예쁘다_가사_Color_Coded_Han_Rom_Eng.flac"
+  "song/SUNSET - NAYEON (320).mp3"
 ];
 
 let msgIndex = 0;
