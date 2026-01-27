@@ -127,21 +127,24 @@ body {
 /* ================= MOBILE / TABLET / DESKTOP ================= */
 @media (max-width: 480px) {
     .card {
-        width: 90vw;
+        width: 100vw;
+        /* already full width, can't go bigger than viewport */
         height: 75vh;
     }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
     .card {
-        width: 70vw;
+        width: 85vw;
+        /* increased from 70vw */
         height: 80vh;
     }
 }
 
 @media (min-width: 1025px) {
     .card {
-        width: 400px;
+        width: 500px;
+        /* increased from 400px */
         height: 600px;
     }
 }
