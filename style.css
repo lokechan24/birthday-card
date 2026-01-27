@@ -119,6 +119,44 @@ body {
     opacity: 1;
 }
 
+#balloons,
+#confetti {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* 🎈 Balloons */
+.balloon {
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+
+/* 🎊 Confetti */
+.confetti {
+    position: absolute;
+    top: -20px;
+    width: 8px;
+    height: 12px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
 /* SMALL HEIGHT PHONES */
 @media (max-height: 600px) {
     .card {
