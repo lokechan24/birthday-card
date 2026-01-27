@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +6,36 @@
     font-family: system-ui, sans-serif;
 }
 
+html,
 body {
-    height: 100vh;
-    background: #000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Prevent scroll */
+    touch-action: manipulation;
+}
+
+/* ================= BODY ================= */
+body {
+    background: #ed99aa;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* ================= CARD ================= */
 .card {
-    width: 340px;
-    height: 520px;
+    width: clamp(300px, 90vw, 400px);
+    /* responsive width */
+    height: clamp(450px, 85vh, 600px);
+    /* responsive height */
     position: relative;
     cursor: pointer;
+    border-radius: 18px;
+    overflow: hidden;
 }
 
+/* Front & Back */
 .card-front,
 .card-back {
     position: absolute;
@@ -35,6 +51,8 @@ body {
     justify-content: center;
     color: white;
     z-index: 2;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
 }
 
 .card-back {
@@ -51,7 +69,6 @@ body {
 }
 
 /* ================= PHOTO FADE SYSTEM ================= */
-
 .photo-full {
     position: absolute;
     inset: 0;
@@ -64,15 +81,16 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 1.2s ease;
+    transform: scale(1.05);
+    transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 .photo-layer.active {
     opacity: 1;
+    transform: scale(1);
 }
 
 /* ================= OVERLAY ================= */
-
 .overlay {
     position: absolute;
     inset: 0;
@@ -80,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 20px;
+    padding: clamp(12px, 4vw, 24px);
     color: white;
     pointer-events: none;
 
@@ -91,17 +109,46 @@ body {
 }
 
 .overlay h1 {
-    font-size: 24px;
+    font-size: clamp(18px, 5vw, 24px);
     margin-bottom: 8px;
 }
 
 .overlay p {
-    font-size: 14px;
+    font-size: clamp(12px, 3.5vw, 16px);
     line-height: 1.5;
 }
 
 .overlay footer {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: clamp(10px, 3vw, 12px);
     opacity: 0.8;
+}
+
+/* ================= MOBILE / TABLET / DESKTOP ================= */
+@media (max-width: 480px) {
+    .card {
+        width: 90vw;
+        height: 75vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .card {
+        width: 70vw;
+        height: 80vh;
+    }
+}
+
+@media (min-width: 1025px) {
+    .card {
+        width: 400px;
+        height: 600px;
+    }
+}
+
+/* ================= MOBILE HEIGHT FIX ================= */
+@media (max-height: 600px) {
+    .card {
+        height: 85vh;
+    }
 }
