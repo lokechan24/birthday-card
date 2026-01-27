@@ -22,8 +22,8 @@ const photos = [
   "photo/selfi.jpg",
   "photo/tounge.jpg",
   "photo/uglybubbly.jpg",
-  "photo/COLLAGE.jpg",
-  "photo/endofbeggining.jpg"
+  "photo/endofbeggining.jpg",
+  "photo/COLLAGE.jpg"
 ];
 
 const playlist = [
