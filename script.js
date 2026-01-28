@@ -12,7 +12,6 @@ const photos = [
   "photo/back.jpg",
   "photo/beach.jpg",
   "photo/COLLAGE.jpg",
-  "photo/endofbeggining.jpg",
   "photo/lmm.jpg",
   "photo/maddy_thumb.jpg",
   "photo/noice.jpg",
