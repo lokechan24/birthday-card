@@ -131,6 +131,28 @@ body {
         /* already full width, can't go bigger than viewport */
         height: 75vh;
     }
+
+        /* ================= PHOTO FADE SYSTEM ================= */
+        .photo-full {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+    
+        .photo-layer {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transform: scale(1.05);
+            transition: opacity 1.2s ease, transform 1.2s ease;
+        }
+    
+        .photo-layer.active {
+            opacity: 1;
+            transform: scale(1);
+        }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -139,6 +161,28 @@ body {
         /* increased from 70vw */
         height: 80vh;
     }
+
+        /* ================= PHOTO FADE SYSTEM ================= */
+        .photo-full {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+    
+        .photo-layer {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transform: scale(1.05);
+            transition: opacity 1.2s ease, transform 1.2s ease;
+        }
+    
+        .photo-layer.active {
+            opacity: 1;
+            transform: scale(1);
+        }
 }
 
 @media (min-width: 1025px) {
@@ -147,6 +191,28 @@ body {
         /* increased from 400px */
         height: 600px;
     }
+
+        /* ================= PHOTO FADE SYSTEM ================= */
+        .photo-full {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+    
+        .photo-layer {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transform: scale(1.05);
+            transition: opacity 1.2s ease, transform 1.2s ease;
+        }
+    
+        .photo-layer.active {
+            opacity: 1;
+            transform: scale(1);
+        }
 }
 
 /* ================= MOBILE HEIGHT FIX ================= */
@@ -154,4 +220,26 @@ body {
     .card {
         height: 85vh;
     }
+
+        /* ================= PHOTO FADE SYSTEM ================= */
+        .photo-full {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+    
+        .photo-layer {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transform: scale(1.05);
+            transition: opacity 1.2s ease, transform 1.2s ease;
+        }
+    
+        .photo-layer.active {
+            opacity: 1;
+            transform: scale(1);
+        }
 }
