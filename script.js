@@ -27,7 +27,7 @@ const photos = [
 ];
 
 const playlist = [
-  "song/06 - HAPPY BIRTHDAY TO YOU.mp3"
+  "song/maddy.mpeg"
 ];
 
 /* ================= STATE ================= */
