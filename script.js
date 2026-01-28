@@ -19,12 +19,15 @@ const photos = [
   "photo/pinksweatshrt.jpg",
   "photo/selfi.jpg",
   "photo/tounge.jpg",
-  "photo/uglybubbly.jpg"
+  "photo/uglybubbly.jpg",
+  "photo/x.jpg",
+  "photo/y.jpg",
+  "photo/z.jpg",
+  "photo/zz.jpg"
 ];
 
 const playlist = [
-  "song/06 - HAPPY BIRTHDAY TO YOU.mp3",
-  "song/SUNSET - NAYEON (320).mp3"
+  "song/06 - HAPPY BIRTHDAY TO YOU.mp3"
 ];
 
 /* ================= STATE ================= */
